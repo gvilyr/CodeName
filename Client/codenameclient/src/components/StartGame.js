@@ -26,7 +26,7 @@ class StartGame extends Component{
                 <input hidden={this.state.gameIdHidden} type="text" id="gameId" name="gameId" />
             </p>
             <p><button hidden={this.state.gameIdHidden}>Join</button></p>
-            <p><button hidden={!this.state.gameIdHidden}>Create new game</button></p>
+            <p><button hidden={!this.state.gameIdHidden} onClick={() => window.location.href= '/CreateGame'}>Create new game</button></p>
         </div>
 
     }
